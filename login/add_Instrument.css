@@ -1,0 +1,297 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.open-button{
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  padding:1rem 3rem;
+  background: #27ae60;
+  color:#fff;
+  text-align: center;
+}
+
+.open-button:hover{
+  background:#74b9ff;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+background-color: #555;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+bottom: 23px;
+right: 28px;
+width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+.message{
+  display: block;
+  background: #eee;
+  padding:1.5rem 1rem;
+  font-size: 2rem;
+  color:#333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container{
+  max-width: 1200px;
+  padding:2rem;
+  margin:0 auto;
+}
+
+.admin-product-form-container.centered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.admin-product-form-container form{
+  max-width: 50rem;
+  margin:0 auto;
+  padding:2rem;
+  border-radius: .5rem;
+  background: #eee;
+}
+
+.admin-product-form-container form h3{
+  text-transform: uppercase;
+  color:#333;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box{
+  width: 100%;
+  border-radius: .5rem;
+  padding:1.2rem 1.5rem;
+  font-size: 1.7rem;
+  margin:1rem 0;
+  background:#fff;
+  text-transform: none;
+}
+/*.admin-product-form-container {
+background-color: none;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;*/
+
+p {
+font-size: 17px;
+align-items: center;
+}
+.box{
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+.box a {
+/*display: inline-block;*/
+background-color: white;
+padding: 0px;
+border-radius: 0px;
+
+}
+.modal {
+align-items: center;
+display: flex;
+justify-content: center; 
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #eee;
+transition: all 0.4s;
+visibility: hidden;
+opacity: 0;
+}
+.content {
+position: absolute;
+background:white;
+width: 400px;
+padding: 1em 2em;
+border-radius: 4px;
+} 
+.modal:target {
+visibility: visible;
+opacity: 1;
+}
+.box-close {
+position: absolute;
+top: 0;
+right: 15px;
+color:  #333;
+text-decoration: none;
+font-size: 30px;
+}
+/* Style the header with a grey background and some padding */
+.header {
+ overflow: hidden;
+ background-color: #74b9ff;
+ padding: 20px 10px;
+}
+.header a.logo {
+ font-size: 25px;
+ font-weight: bold;
+}
+/* Style the header links */
+.header a {
+ float: left;
+ color: #333;
+ text-align: center;
+ padding: 12px;
+ text-decoration: none;
+ font-size: 18px;
+ line-height: 25px;
+ border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+ font-size: 25px;
+ font-weight: bold;
+ background-color: #74b9ff;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+ background-color: #ddd;
+ color:#333 ;
+}
+
+/* Style the active/current link*/
+.header a.active {
+ background-color: #74b9ff;
+ color: #333;
+}
+
+/* Float the link section to the right */
+.header-right {
+ float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+ .header a {
+   float: none;
+   display: block;
+   text-align: left;
+ }
+ .header-right {
+   float: none;
+ }
+}
+
+
+
+@media (max-width:991px){
+
+  html{
+     font-size: 55%;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .product-display{
+     overflow-y:scroll;
+  }
+
+  .product-display .product-display-table{
+     width: 80rem;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+     font-size: 50%;
+  }
+
+}

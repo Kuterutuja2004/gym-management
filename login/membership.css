@@ -1,0 +1,154 @@
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+h1{
+    font-family: sans-serif;
+}
+#blue{
+    color:#74b9ff
+}
+.wrapper{
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+    /*background-color: lightskyblue;*/
+    border-radius:10px;
+
+    }
+header {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 21px;
+
+}
+h3{
+    text-align: center;
+
+}
+.columns{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin: 50px;
+    height: 300px;
+    text-align: center;
+    
+    
+
+    
+   
+}                                                                                                       
+    
+    
+.column {
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+    background: whitesmoke;
+    transition: 0.3s;
+    box-shadow: 8px 8px 4px grey;
+    border: 3px solid #74b9ff;
+    border-top-right-radius:40px ;
+    border-bottom-left-radius: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    
+   
+}
+   
+  
+    
+
+      
+     
+.column:first-child{
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+    background: whitesmoke;
+    transition: 0.3s;
+    box-shadow: 8px 8px 4px grey;
+    border: 3px solid #74b9ff;
+    border-top-right-radius:40px ;
+    border-bottom-left-radius: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+   
+
+}
+
+.column:last-child{
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+    background: whitesmoke;
+    transition: 0.3s;
+    box-shadow: 8px 8px 4px grey;
+    border: 3px solid #74b9ff;
+    border-top-right-radius:40px ;
+    border-bottom-left-radius: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+   
+    
+}
+@media screen and (max-width: 980px){
+    .columns .column{
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+    .columns .column:last-child{
+        flex-basis: 100%;
+        margin: 0;
+    }
+    .columns .column:nth-last-child(2){
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 680px){
+    .container .left{
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
+button{
+    background-color:#74b9ff;
+    color: white;
+    border-radius: 5px;
+    border-color:#3498db;
+   
+}
+button:hover {
+    background-color: #3498db; 
+    color: #fff; 
+  }
+  
+
+.column:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+     
+
+  }
+  /* Add this to your existing CSS file or in a style tag in the head section */
+.button-section {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+    
+}
+
+.main-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db; /* Choose your button color */
+    color: #fff; /* Choose your text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

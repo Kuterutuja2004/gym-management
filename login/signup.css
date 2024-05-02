@@ -1,0 +1,95 @@
+.body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+   
+    
+}
+.image{
+    background-image: url('login_image3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.Signup
+{
+    width: 400px;
+    height: 800px;
+    margin: auto;
+    background: transparent;
+    border-radius: 3px;
+    color: #fff;
+
+
+}
+.login{
+    width: 400px;
+    height: 320px;
+    margin: auto;
+    background: transparent;
+    border-radius: 3px;
+    color: #fff;
+
+}
+
+
+
+
+h1{
+    text-align: center;
+
+}
+h4{
+    text-align: center;
+    padding: 15px;
+
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+   
+    
+}
+input[type="Submit"]{
+    position: relative;
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+input[type="Submit"]:hover{
+    color: white;
+    background: rgb(13, 211, 247);
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    
+}
